@@ -10,7 +10,7 @@
     <AppliesTo>DotNetCoreRazor</AppliesTo>
     <DefaultName>Component.razor</DefaultName>
     <NumberOfParentCategoriesToRollUp>3</NumberOfParentCategoriesToRollUp>
-    <SortOrder>72</SortOrder>
+    <SortOrder>50</SortOrder>
     <ShowByDefault>false</ShowByDefault>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
   </TemplateData>

@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="RazorComponentCodeBehind.c5e48f45-f4d9-4ec7-8e58-5065a9d8f9e8" Version="1.1" Language="en-US" Publisher="Clint McBride" />
-        <DisplayName>Razor Component Code Behind</DisplayName>
+        <Identity Id="RazorComponentCodeBehind.3C881215-7612-4A35-AA8D-0D2787F38D81" Version="2.0" Language="en-US" Publisher="Renn" />
+        <DisplayName>Blazor Component Code Behind Templates (VS2022)</DisplayName>
         <Description xml:space="preserve">Adds two new templates:
-    Razor Component with Code section moved to a separate .cs file.
-    Empty Razor Component with Code section moved to a separate .cs file.
-</Description>
+    Blazor blank component with Code section moved to a separate .cs file.
+    Blazor page component with Code section moved to a separate .cs file.
+
+(Based on extension created by Clint McBride)</Description>
+        <MoreInfo>https://github.com/rennr/blazor-code-behind-template</MoreInfo>
+        <Icon>BlazorIcon.ico</Icon>
         <Tags>Blazor, C#</Tags>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0,18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Community">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
     </Installation>
     <Dependencies>
     </Dependencies>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,18.0)" DisplayName="Visual Studio core editor" />
     </Prerequisites>
     <Assets>
-        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\Templates.zip" />
     </Assets>
 </PackageManifest>

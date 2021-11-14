@@ -25,13 +25,13 @@ namespace RazorComponentCodeBehind
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [Guid(RazorComponentCodeBehindPackage.PackageGuidString)]
-    [ProvideMenuResource("Menus.ctmenu", 1)]
+    //[ProvideMenuResource("Menus.ctmenu", 1)]
     public sealed class RazorComponentCodeBehindPackage : AsyncPackage
     {
         /// <summary>
         /// RazorComponentCodeBehindPackage GUID string.
         /// </summary>
-        public const string PackageGuidString = "b3febc4e-fd63-4a86-af97-296ebb85b805";
+        public const string PackageGuidString = "3C881215-7612-4A35-AA8D-0D2787F38D81";
 
         #region Package Members
 
